@@ -1,0 +1,82 @@
+@import '../utils/vars';
+.header {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  background-color: getColor('white');
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__logo {
+    margin-left: 15px;
+  }
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      & > :last-child {
+        margin-right: 27px;
+        margin-left: 30px;
+      }
+    }
+    &__link {
+      font-weight: 500;
+      font-size: 14px;
+      color: getColor('ashen');
+      fill: getColor('ashen');
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition-property: color, fill;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      &:hover {
+        color: getColor('blue');
+        fill: getColor('blue');
+      }
+      &:focus {
+        color: getColor('blue');
+        fill: getColor('blue');
+      }
+    }
+    &__icon {
+      margin-right: 10px;
+    }
+  }
+  &__nav {
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+    &__link {
+      position: relative;
+      font-size: 14px;
+      line-height: 16px;
+      color: getColor('light-black');
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition-property: color, fill;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      &:hover {
+        color: getColor('blue');
+        fill: getColor('blue');
+      }
+      &:focus {
+        color: getColor('blue');
+        fill: getColor('blue');
+      }
+    }
+    &__item:not(:last-child) {
+      margin-right: 46px;
+      margin-left: 0;
+    }
+  }
+}

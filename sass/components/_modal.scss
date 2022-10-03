@@ -1,0 +1,43 @@
+@import '../utils/vars';
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: getColor('white');
+  position: fixed;
+  z-index: 3;
+  opacity: 1;
+  padding: 40px;
+  &__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    &--exit {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      border-radius: 50%;
+      top: 8px;
+      right: 8px;
+      background: getColor('white');
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      &:hover {
+        border-radius: 50%;
+        background: getColor('white');
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      &:focus {
+        border-radius: 50%;
+        background: getColor('white');
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

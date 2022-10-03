@@ -1,0 +1,47 @@
+@import '../utils/vars';
+.doing {
+  padding: 94px 0;
+  &__heading {
+    font-size: 36px;
+    line-height: 1.17;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    padding: 0 15px;
+    & > li:not(:first-child) {
+      margin-left: 30px;
+    }
+    &__box {
+      width: 370px;
+      display: flex;
+      position: relative;
+      z-index: 1;
+    }
+    &__image {
+      width: 370px;
+      height: 294px;
+    }
+  }
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #{getColor('gray')}90;
+    width: 370px;
+    padding: 27px 94px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    &__text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: getColor('white');
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../utils/vars';
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: getColor('light-black');
+  text-decoration: none;
+  line-height: 1.17;
+  margin-right: 93px;
+  &--blue {
+    color: getColor('blue');
+  }
+}

@@ -1,0 +1,36 @@
+@import '../utils/vars';
+.social {
+  padding-bottom: 30px;
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: row;
+    & > li:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: solid 0px;
+    background-color: getColor('white');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: getColor('light-ashen');
+    transition-property: fill, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    &:hover {
+      background-color: getColor('blue');
+      fill: getColor('white');
+    }
+    &:focus {
+      background-color: getColor('blue');
+      fill: getColor('white');
+    }
+  }
+}

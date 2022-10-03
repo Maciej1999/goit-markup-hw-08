@@ -1,0 +1,32 @@
+@import '../utils/vars';
+.order {
+  height: 600px;
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url(../images/bgim.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__heading {
+    font-size: 44px;
+    text-align: center;
+    line-height: 1.36;
+    color: getColor('white');
+  }
+  &__button {
+    background: getColor('blue');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    text-align: center;
+    color: getColor('white');
+    border-width: 0px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+  }
+}

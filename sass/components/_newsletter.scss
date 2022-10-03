@@ -1,0 +1,52 @@
+@import '../utils/vars';
+.newsletter {
+  width: 570px;
+  margin-top: 12px;
+  margin-bottom: 34px;
+  margin-left: 78px;
+  &__heading {
+    color: getColor('white');
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__input {
+    height: 50px;
+    width: 358px;
+    background: getColor('gray');
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
+  &__button {
+    height: 50px;
+    width: 200px;
+    background-color: getColor('blue');
+    align-self: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    color: getColor('white');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    margin-left: 24px;
+  }
+}

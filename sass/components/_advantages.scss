@@ -1,0 +1,30 @@
+@import '../utils/vars';
+.advantages {
+  padding-top: 94px;
+  &__list {
+    display: flex;
+    padding: 0 15px;
+    &__item {
+      width: 270px;
+    }
+    & > li:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  &__heading {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16.41px;
+  }
+  &__icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: getColor('ashen');
+  }
+}
