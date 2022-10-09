@@ -101,7 +101,7 @@ button:active {
 }
 .backdrop {
   min-width: 320px;
-  max-width: 1600px;
+  max-width: 100%;
   position: fixed;
   height: 100%;
   width: 100%;
