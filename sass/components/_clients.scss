@@ -1,18 +1,19 @@
 @import '../utils/vars';
 .clients {
-  padding: 94px 0;
+  padding: 0px 0;
   &__heading {
     font-size: 36px;
     line-height: 1.17;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   &__list {
     display: flex;
-    padding: 0 15px;
+    flex-wrap: wrap;
+    gap: 30px;
     & > li:not(:first-child) {
-      margin-left: 30px;
+      margin-left: 0px;
     }
   }
   &__box {

@@ -1,5 +1,7 @@
 @import '../utils/vars';
 .doing {
+  visibility: hidden;
+  display: none;
   padding: 94px 0;
   &__heading {
     font-size: 36px;

@@ -1,16 +1,18 @@
 @import '../utils/vars';
 .footer {
-  padding: 60px 0;
+  padding: 0px 0;
+  width: 100%;
   background-color: getColor('gray');
   &__container {
     display: flex;
+    flex-direction: column;
   }
   &__links {
-    margin-left: 15px;
+    margin-left: 0px;
   }
   &__logo {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: getColor('white');
   }
   &__list {
@@ -42,20 +44,20 @@
   &__social {
     width: 206px;
     height: 80px;
-    margin-left: 70px;
-    margin-top: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
     &__heading {
       color: getColor('white');
       font-weight: 700;
       font-size: 14px;
       line-height: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       text-transform: uppercase;
     }
     &__list {
       display: flex;
       & :not(:first-child) {
-        margin-left: 10px;
+        margin-left: 0px;
       }
     }
     &__icon {

@@ -1,10 +1,12 @@
 @import '../utils/vars';
 .order {
-  height: 600px;
+  height: 400px;
+  width: 100%;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
     url(../images/bgim.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
   &__container {
     display: flex;
     flex-direction: column;
@@ -12,10 +14,11 @@
     justify-content: center;
   }
   &__heading {
-    font-size: 44px;
+    font-size: 26px;
     text-align: center;
     line-height: 1.36;
     color: getColor('white');
+    font-weight: 900;
   }
   &__button {
     background: getColor('blue');
@@ -24,9 +27,9 @@
     text-align: center;
     color: getColor('white');
     border-width: 0px;
-    font-weight: 500;
+    font-weight: 700;
     width: 200px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 0px;
   }
 }

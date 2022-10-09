@@ -1,19 +1,20 @@
 @import '../utils/vars';
 .newsletter {
-  width: 570px;
-  margin-top: 12px;
-  margin-bottom: 34px;
-  margin-left: 78px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   &__heading {
     color: getColor('white');
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-transform: uppercase;
   }
   &__box {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     position: relative;
   }
@@ -28,7 +29,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
+    padding-left: 0px;
   }
   &__button {
     height: 50px;
@@ -47,6 +48,6 @@
     justify-content: center;
   }
   &__icon {
-    margin-left: 24px;
+    margin-left: 0px;
   }
 }

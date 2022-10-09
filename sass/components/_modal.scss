@@ -1,18 +1,20 @@
 @import '../utils/vars';
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 100px;
+  min-width: 320px;
+  max-width: 767px;
+  height: auto;
   background-color: getColor('white');
   position: fixed;
   z-index: 3;
   opacity: 1;
-  padding: 40px;
+  padding: 0px;
   &__heading {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
   }
   &__form {
     display: flex;
