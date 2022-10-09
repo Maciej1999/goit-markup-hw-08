@@ -1,12 +1,12 @@
 @import '../utils/vars';
 .clients {
-  padding: 0px 0;
+  padding: 60px 0;
   &__heading {
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.71;
     display: flex;
     justify-content: center;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
@@ -16,14 +16,14 @@
       margin-left: 0px;
     }
   }
-  &__box {
-    width: 170px;
+  &__item {
     height: 92px;
     border: getColor('light-ashen') solid;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-basis: calc((100% - 30px) / 2);
     transition-property: border, color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -52,6 +52,20 @@
       border-color: getColor('blue');
       color: getColor('blue');
       fill: getColor('blue');
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    &__item {
+      flex-basis: calc((100% - 96px) / 3);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__item {
+      flex-basis: calc((100% - 192px) / 6);
     }
   }
 }

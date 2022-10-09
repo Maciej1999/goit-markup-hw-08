@@ -3,9 +3,12 @@
   padding: 94px 0;
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     justify-content: center;
+    margin-bottom: 30px;
     & :not(:first-child) {
-      margin-left: 8px;
+      margin-left: 0px;
     }
   }
   &__button {
@@ -14,8 +17,8 @@
     border-radius: 4px;
     line-height: 1.625;
     font-weight: 500;
+    font-size: 16px;
     padding: 6px 22px;
-    margin-bottom: 50px;
     transition-property: box-shadow, background-color, color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;

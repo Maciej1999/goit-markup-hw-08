@@ -1,0 +1,87 @@
+@import '../utils/vars';
+.mobile {
+  &__menu {
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: getColor('white');
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    padding: 48px 40px;
+    &.is-open {
+      transform: translateX(0);
+      display: block;
+      visibility: visible;
+    }
+    &__button {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      background-color: getColor('white');
+      &focus {
+        fill: getColor('blue');
+        background-color: getColor('white');
+      }
+      &:hover {
+        fill: getColor('blue');
+        background-color: getColor('white');
+      }
+    }
+    &__icon {
+      width: 19px;
+      height: 19px;
+    }
+    &__nav {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      color: getColor('light-black');
+      margin-bottom: 36px;
+      &--current {
+        color: getColor('blue');
+      }
+    }
+    &__tel {
+      position: absolute;
+      bottom: 194px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      color: getColor('blue');
+    }
+    &__mail {
+      position: absolute;
+      bottom: 134px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: getColor('ashen');
+    }
+    &__social {
+      display: flex;
+      position: absolute;
+      bottom: 48px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: getColor('blue');
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: getColor('blue');
+  }
+}

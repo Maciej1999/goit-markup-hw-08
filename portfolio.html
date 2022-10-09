@@ -20,37 +20,72 @@
     <header class="header">
       <div class="header__container container">
         <a class="logo header__logo" href="index.html"><span class="logo--blue">Web</span>Studio</a>
-        <div class="header__menu">
-          <nav class="header__nav">
-            <ul class="header__nav__list">
-              <li class="header__nav__item">
-                <a class="header__nav__link" href="index.html">Agencja</a>
-              </li>
-              <li class="header__nav__item">
-                <a class="header__nav__link current" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="header__nav__item">
-                <a class="header__nav__link" href="index.html">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header__menu__list">
+        <button type="button" class="button header__button js-open-menu">
+          <svg class="header__button__icon">
+            <use href="./images/sprite.svg#icon-mobile-open"></use>
+          </svg>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="index.html">Agencja</a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link header__nav__current current" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="index.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__menu__list">
+          <li>
+            <a class="header__menu__link" href="mailto:info@advstudio.com">
+              <svg width="16" height="12" class="header__menu__icon">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@advstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header__menu__link" href="tel:+48111111111">
+              <svg width="10" height="16" class="header__menu__icon">
+                <use href="./images/sprite.svg#icon-tel"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </li>
+        </ul>
+        <div class="mobile__menu js-menu-container">
+          <button class="mobile__menu__button js-close-menu">
+            <svg class="mobile__menu__icon">
+              <use href="./images/sprite.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <ul>
             <li>
-              <a class="header__menu__link" href="mailto:info@advstudio.com">
-                <svg width="16" height="12" class="header__menu__icon">
-                  <use href="./images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@advstudio.com
-              </a>
+              <a class="mobile__menu__nav" href="index.html">Agencja</a>
             </li>
             <li>
-              <a class="header__menu__link" href="tel:+48111111111">
-                <svg width="10" height="16" class="header__menu__icon">
-                  <use href="./images/sprite.svg#icon-tel"></use>
-                </svg>
-                +48 111 111 111
-              </a>
+              <a class="mobile__menu__nav mobile__menu__nav--current" href="portfolio.html"
+                >Portfolio</a
+              >
             </li>
+            <li><a class="mobile__menu__nav" href="index.html">Kontakt</a></li>
+          </ul>
+          <ul class="mobile__menu__contact">
+            <li><a class="mobile__menu__tel" href="tel:+48111111111">+48 111 111 111</a></li>
+            <li>
+              <a class="mobile__menu__mail" href="mailto:info@advstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile__menu__social">
+            <li><a class="mobile__link" href="index.html">Instagram</a></li>
+            <li><a class="mobile__link" href="index.html">Twitter</a></li>
+            <li><a class="mobile__link" href="index.html">Facebook</a></li>
+            <li><a class="mobile__link" href="index.html">Linkedin</a></li>
           </ul>
         </div>
       </div>
@@ -317,5 +352,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

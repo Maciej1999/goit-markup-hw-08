@@ -1,21 +1,27 @@
 @import '../utils/vars';
 .footer {
-  padding: 0px 0;
+  padding: 60px 0;
   width: 100%;
   background-color: getColor('gray');
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   &__links {
-    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__logo {
     display: block;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     color: getColor('white');
   }
   &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__address {
       font-weight: 400;
       font-size: 14px;
@@ -32,6 +38,7 @@
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+    margin-top: 8px;
     &:hover {
       color: getColor('blue');
       opacity: 1;
@@ -42,22 +49,23 @@
     }
   }
   &__social {
-    width: 206px;
-    height: 80px;
-    margin-left: 0px;
-    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__heading {
       color: getColor('white');
       font-weight: 700;
       font-size: 14px;
       line-height: 16px;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
+      margin-top: 60px;
       text-transform: uppercase;
     }
     &__list {
       display: flex;
       & :not(:first-child) {
-        margin-left: 0px;
+        margin-left: 10px;
       }
     }
     &__icon {
@@ -79,6 +87,43 @@
       &:focus {
         background-color: getColor('blue');
       }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+      gap: 60px;
+    }
+    &__social {
+      width: auto;
+      &__heading {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 0;
+    }
+    &__links {
+      align-items: flex-start;
+    }
+    &__list {
+      align-items: flex-start;
+    }
+    &__social {
+      align-items: flex-start;
     }
   }
 }

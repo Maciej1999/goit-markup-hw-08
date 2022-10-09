@@ -1,8 +1,10 @@
 @import '../utils/vars';
 .backdrop {
+  min-width: 320px;
+  max-width: 1600px;
   position: fixed;
   height: 100%;
-  width: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

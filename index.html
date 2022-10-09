@@ -64,42 +64,70 @@
     <header class="header">
       <div class="header__container container">
         <a class="logo header__logo" href="index.html"><span class="logo--blue">Web</span>Studio</a>
-        <div class="header__menu">
-          <nav class="header__nav">
-            <ul class="header__nav__list">
-              <li class="header__nav__item">
-                <a class="header__nav__link current" href="index.html">Agencja</a>
-              </li>
-              <li class="header__nav__item">
-                <a class="header__nav__link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="header__nav__item">
-                <a class="header__nav__link" href="index.html">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header__menu__list">
-            <li>
-              <a class="header__menu__link" href="mailto:info@advstudio.com">
-                <svg width="16" height="12" class="header__menu__icon">
-                  <use href="./images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@advstudio.com
-              </a>
+        <button type="button" class="button header__button js-open-menu">
+          <svg class="header__button__icon">
+            <use href="./images/sprite.svg#icon-mobile-open"></use>
+          </svg>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li class="header__nav__item">
+              <a class="header__nav__link header__nav__current current" href="index.html"
+                >Agencja</a
+              >
             </li>
-            <li>
-              <a class="header__menu__link" href="tel:+48111111111">
-                <svg width="10" height="16" class="header__menu__icon">
-                  <use href="./images/sprite.svg#icon-tel"></use>
-                </svg>
-                +48 111 111 111
-              </a>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="index.html">Kontakt</a>
             </li>
           </ul>
+        </nav>
+        <ul class="header__menu__list">
+          <li>
+            <a class="header__menu__link" href="mailto:info@advstudio.com">
+              <svg width="16" height="12" class="header__menu__icon">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@advstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header__menu__link" href="tel:+48111111111">
+              <svg width="10" height="16" class="header__menu__icon">
+                <use href="./images/sprite.svg#icon-tel"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </li>
+        </ul>
+        <div class="mobile__menu js-menu-container">
+          <button class="mobile__menu__button js-close-menu">
+            <svg class="mobile__menu__icon">
+              <use href="./images/sprite.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <ul>
+            <li>
+              <a class="mobile__menu__nav mobile__menu__nav--current" href="index.html">Agencja</a>
+            </li>
+            <li><a class="mobile__menu__nav" href="portfolio.html">Portfolio</a></li>
+            <li><a class="mobile__menu__nav" href="index.html">Kontakt</a></li>
+          </ul>
+          <ul class="mobile__menu__contact">
+            <li><a class="mobile__menu__tel" href="tel:+48111111111">+48 111 111 111</a></li>
+            <li>
+              <a class="mobile__menu__mail" href="mailto:info@advstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile__menu__social">
+            <li><a class="mobile__link" href="index.html">Instagram</a></li>
+            <li><a class="mobile__link" href="index.html">Twitter</a></li>
+            <li><a class="mobile__link" href="index.html">Facebook</a></li>
+            <li><a class="mobile__link" href="index.html">Linkedin</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="menu">
-
       </div>
     </header>
     <main>
@@ -188,7 +216,7 @@
         <div class="team__container container">
           <h2 class="team__heading">Nasz zespół</h2>
           <ul class="team__list">
-            <li>
+            <li class="team__list__item">
               <figure class="team__figure">
                 <img src="./images/JD1.jpg" alt="John Doe Product Designer" class="team__image" />
                 <figcaption class="team__figcaption">
@@ -229,7 +257,7 @@
                 </div>
               </figure>
             </li>
-            <li>
+            <li class="team__list__item">
               <figure class="team__figure">
                 <img src="./images/JD2.jpg" alt="John Doe Frontend Developer" class="team__image" />
                 <figcaption class="team__figcaption">
@@ -270,7 +298,7 @@
                 </div>
               </figure>
             </li>
-            <li>
+            <li class="team__list__item">
               <figure class="team__figure">
                 <img src="./images/JD3.jpg" alt="John Doe Merketing" class="team__image" />
                 <figcaption class="team__figcaption">
@@ -311,7 +339,7 @@
                 </div>
               </figure>
             </li>
-            <li>
+            <li class="team__list__item">
               <figure class="team__figure">
                 <img src="./images/JD4.jpg" alt="John Doe UI Designer" class="team__image" />
                 <figcaption class="team__figcaption">
@@ -359,47 +387,35 @@
         <div class="clients__container container">
           <h2 class="clients__heading">Nasi klienci</h2>
           <ul class="clients__list">
-            <li>
-              <div class="clients__box">
-                <svg width="106" height="60" class="clients__icon">
-                  <use href="./images/sprite.svg#icon-client1"></use>
-                </svg>
-              </div>
+            <li class="clients__item">
+              <svg width="106" height="60" class="clients__icon">
+                <use href="./images/sprite.svg#icon-client1"></use>
+              </svg>
             </li>
-            <li>
-              <div class="clients__box">
-                <svg width="106" height="60" class="clients__icon">
-                  <use href="./images/sprite.svg#icon-client2"></use>
-                </svg>
-              </div>
+            <li class="clients__item">
+              <svg width="106" height="60" class="clients__icon">
+                <use href="./images/sprite.svg#icon-client2"></use>
+              </svg>
             </li>
-            <li>
-              <div class="clients__box">
-                <svg width="106" height="60" class="clients__icon">
-                  <use href="./images/sprite.svg#icon-client3"></use>
-                </svg>
-              </div>
+            <li class="clients__item">
+              <svg width="106" height="60" class="clients__icon">
+                <use href="./images/sprite.svg#icon-client3"></use>
+              </svg>
             </li>
-            <li>
-              <div class="clients__box">
-                <svg width="106" height="60" class="clients__icon">
-                  <use href="./images/sprite.svg#icon-client4"></use>
-                </svg>
-              </div>
+            <li class="clients__item">
+              <svg width="106" height="60" class="clients__icon">
+                <use href="./images/sprite.svg#icon-client4"></use>
+              </svg>
             </li>
-            <li>
-              <div class="clients__box">
-                <svg width="106" height="60" class="clients__icon">
-                  <use href="./images/sprite.svg#icon-client5"></use>
-                </svg>
-              </div>
+            <li class="clients__item">
+              <svg width="106" height="60" class="clients__icon">
+                <use href="./images/sprite.svg#icon-client5"></use>
+              </svg>
             </li>
-            <li>
-              <div class="clients__box">
-                <svg width="106" height="60" class="clients__icon">
-                  <use href="./images/sprite.svg#icon-client6"></use>
-                </svg>
-              </div>
+            <li class="clients__item">
+              <svg width="106" height="60" class="clients__icon">
+                <use href="./images/sprite.svg#icon-client6"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -471,5 +487,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
