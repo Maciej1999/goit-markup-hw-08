@@ -543,7 +543,7 @@ button:active {
   fill: #2196f3;
 }
 .header__menu__icon {
-  margin-right: 0px;
+  margin-right: 8px;
 }
 .header__nav__list {
   display: none;
@@ -650,6 +650,9 @@ button:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header__icon {
+    margin-right: 10px;
   }
   .header__nav__list {
     display: -webkit-box;

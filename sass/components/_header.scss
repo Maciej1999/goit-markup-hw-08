@@ -62,7 +62,7 @@
       }
     }
     &__icon {
-      margin-right: 0px;
+      margin-right: 8px;
     }
   }
   &__nav {
@@ -151,6 +151,9 @@
       &__link {
         display: flex;
       }
+    }
+    &__icon {
+      margin-right: 10px;
     }
     &__nav {
       &__list {
